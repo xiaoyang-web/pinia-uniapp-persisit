@@ -1,0 +1,43 @@
+{
+  "name": "@sdb/pinia-uniapp-persist",
+  "version": "1.0.0",
+  "description": "pinia 存储持久化插件 uniapp 版本",
+  "scripts": {
+    "build": "rimraf dist && rollup -c"
+  },
+  "main": "./dist/es/index.mjs",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/es/index.mjs",
+      "require": "./dist/cjs/index.cjs"
+    }
+  },
+  "types": "./dist/types",
+  "type": "module",
+  "keywords": [
+    "pinia",
+    "plugin",
+    "uniapp",
+    "storage"
+  ],
+  "author": "alva-yky",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xiaoyang-web/pinia-uniapp-persisit.git"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "^3.3.3",
+    "@rollup/plugin-terser": "^0.4.3",
+    "pinia": "^2.0.36",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.27.1",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "tslib": "^2.6.1",
+    "typescript": "^5.1.6"
+  }
+}
